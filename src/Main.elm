@@ -1,27 +1,35 @@
 module Main exposing (main)
 
-import Html exposing (div, img, main_, text)
-import Html.Attributes exposing (class, src)
+import Html exposing (a, div, h1, h2, img, main_, p, text)
+import Html.Attributes exposing (alt, class, href, src, target, title)
+import VitePluginHelper
 
 
-imageScale =
-    3
+imagePath =
+    VitePluginHelper.asset "/src/doggo.jpg"
 
 
-imageUrl : String
-imageUrl =
-    let
-        width =
-            90 * imageScale
+description =
+    """
+    This is placeholder for description (TBD)
+"""
 
-        height =
-            160 * imageScale
-    in
-    "https://place.dog/" ++ String.fromInt width ++ "/" ++ String.fromInt height
+
+repoLink =
+    "https://github.com/qd3v/lab-doggo-cfp-elm"
+
+
+imageSource =
+    "https://www.deviantart.com/somatart/art/Somat-Happy-Dog-948326382"
 
 
 main : Html.Html a
 main =
     main_ [ class "main" ]
-        [ img [ class "doggo", src imageUrl ] []
+        [ h1 [] [ text "Doggo" ]
+        , h2 [] [ text "Elm @ CloudFlare Pages demo" ]
+        , img [ class "doggo", src imagePath, title imageSource ] []
+        , p [ class "desc" ]
+            [ text description ]
+        , a [ href repoLink, target "_blank" ] [ text "README.md" ]
         ]
