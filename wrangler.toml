@@ -11,7 +11,7 @@ compatibility_date = "2024-09-03"
 # https://developers.cloudflare.com/workers/configuration/routing/custom-domains/
 # Path-based routing: https://developers.cloudflare.com/workers/wrangler/configuration/#routes
 
-#route = { pattern = "nps-rs.kulagin.dev", custom_domain = true }
+#route = { pattern = "doggo.lab.kulagin.dev", custom_domain = true }
 
 [dev]
 port = 8989

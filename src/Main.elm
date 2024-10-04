@@ -16,7 +16,7 @@ description =
 
 
 repoLink =
-    "https://github.com/qd3v/lab-doggo-cfp-elm"
+    "https://github.com/qd3v/lab-doggo-elm?tab=readme-ov-file"
 
 
 imageSource =
