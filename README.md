@@ -1,6 +1,11 @@
 # DOGGO (pet project)
 
 
+## CFP integration/deploy
+
+- `wrangler pages deploy`
+- [some info](https://seanrmurphy.medium.com/deploy-and-elm-frontend-to-cloudflare-pages-f8859db1ed51)
+- [disabling access to CF's origin host](https://developers.cloudflare.com/pages/configuration/custom-domains/#disable-access-to-pagesdev-subdomain)
 
 ## DEVELOPMENT
 

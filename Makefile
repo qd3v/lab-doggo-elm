@@ -4,6 +4,7 @@ dev:
 build:
 	vite build
 
+# TODO: fix
 build/optimized:
 	vite build:eol2
 
@@ -11,3 +12,9 @@ build/optimized:
 # JB elm plugin requires also https://dashboard.lamdera.app/docs/download
 deps:
 	npm install
+
+
+cf/deploy:
+	wrangler pages deploy
+
+deploy: build cf/deploy

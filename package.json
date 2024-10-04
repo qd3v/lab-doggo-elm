@@ -13,18 +13,15 @@
   },
   "author": "Ivan Kulagin <ivan@kulagin.dev>",
   "license": "MIT",
-  "dependencies": {
-
-  },
   "devDependencies": {
     "elm": "^0.19.1",
     "elm-format": "^0.8.*",
-    "elm-review": "^2.*",
     "elm-optimize-level-2": "^0.3.*",
-
+    "elm-review": "^2.*",
+    "tempy": "^3.*",
     "vite": "^5.*",
     "vite-plugin-elm": "^3.*",
-    "tempy": "^3.*"
+    "wrangler": "^3.80.0"
   },
   "overrides": {
     "graceful-fs": "^4.*"
