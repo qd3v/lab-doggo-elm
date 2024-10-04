@@ -1,10 +1,13 @@
-server:
-	npx elm-land server
+dev:
+	vite --host
+
+build:
+	vite build
+
+build/optimized:
+	vite build:eol2
+
 
 # JB elm plugin requires also https://dashboard.lamdera.app/docs/download
 deps:
 	npm install
-
-
-static:
-	npm run build && http-server -p 9000 dist

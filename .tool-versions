@@ -1,0 +1,6 @@
+nodejs 20.14.0
+
+# 20, 18 all fails with `ReferenceError: primordials is not defined`
+# nodejs 14.19.1
+# nodejs 16.14.2
+# nodejs 18.20.4

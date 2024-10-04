@@ -1,7 +1,32 @@
 {
+  "name": "doggo-elm",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:eol2": "CUSTOM_COMPILER=true vite build",
+    "preview": "vite preview"
+  },
+  "author": "Ivan Kulagin <ivan@kulagin.dev>",
+  "license": "MIT",
   "dependencies": {
-    "elm": "^0.19.1-5",
-    "elm-format": "^0.8.7",
-    "elm-review": "^2.12.0"
+
+  },
+  "devDependencies": {
+    "elm": "^0.19.1",
+    "elm-format": "^0.8.*",
+    "elm-review": "^2.*",
+    "elm-optimize-level-2": "^0.3.*",
+
+    "vite": "^5.*",
+    "vite-plugin-elm": "^3.*",
+    "tempy": "^3.*"
+  },
+  "overrides": {
+    "graceful-fs": "^4.*"
   }
 }
